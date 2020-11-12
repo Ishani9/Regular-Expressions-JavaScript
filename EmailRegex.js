@@ -12,7 +12,7 @@ const readline = require('readline').createInterface({
   });
   
   //regex pattern
-const emailRegexPattern = RegExp("^(abc[.][A-Za-z]+@bridgelabz[.]co[.][A-Za-z]{2,})$");
+const emailRegexPattern = RegExp("^(abc[+_-]{0,}[.][A-Za-z]+@bridgelabz[.]co[.][A-Za-z]{2,})$");
 
 //test function
 let testForEmail=(email)=>{
