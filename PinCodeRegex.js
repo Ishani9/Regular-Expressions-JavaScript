@@ -12,7 +12,7 @@ const readline = require('readline').createInterface({
   });
   
   //regex pattern
-const pincodeRegexPattern=RegExp('^[1-9]{1}[0-9]{5}$');
+const pincodeRegexPattern=RegExp('^[1-9]{1}[0-9]{5}$' || '^[1-9]{1}[0-9]{2}\\s[0-9]{3}$');
 
 //test function
 let testForPinCode=(PIN)=>{
